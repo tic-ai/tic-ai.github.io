@@ -1,192 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="TIC-AI" />
-        <meta name="keywords" content="python" />
-        <meta name="description" content="My first post, read it to find out." />
+
+        <title>First Post</title>
+        <meta charset="utf-8" />
+        <link href="https://tic-ai.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="AI's blog Full Atom Feed" />
+        <link href="https://tic-ai.github.io/feeds/%s.atom.xml" type="application/atom+xml" rel="alternate" title="AI's blog Categories Atom Feed" />
 
 
-    <title>First Post - AI's blog</title>
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" href="https://tic-ai.github.io/theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://tic-ai.github.io/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="https://tic-ai.github.io/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://tic-ai.github.io/theme/pygment.css" />
 
-    <link href="https://tic-ai.github.io/theme/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://tic-ai.github.io/theme/css/pygments/native.css" rel="stylesheet" />
-    
-    <link href="https://tic-ai.github.io/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+        <script src="https://tic-ai.github.io/theme/js/libs/modernizr-2.6.2.min.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- Feeds -->
-        <link href="https://tic-ai.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="AI's blog ATOM Feed" />
+
+
+
 </head>
-<body data-spy="scroll" data-target="#scrollspy">
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper-small" class="twitchy-background">
-            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
-                <li>
-        <a href="https://tic-ai.github.io" title="AI's blog" class="collapsed">
-            <span class="glyphicon glyphicon-home"></span>
-        </a>
-    </li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="https://tic-ai.github.io/archives.html" title="Recent Articles" class="collapsed">
-            <span class="glyphicon glyphicon-th-list"></span>
-        </a>
-    </li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
-                        <i class="fa fa-users padding-small"></i>
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
-                    <li>
-                        <a href="#" title="Another social link"><i class="fa fa-another-social-link-square fa-lg padding-small"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="You can add links in your config file"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg padding-small"></i></a>
-                    </li>
-                </ul></li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="#" title="Back to top" class="collapsed">
-            <span class="fa fa-arrow-up"></span>
-        </a>
-    </li>
-            </ul>
-        </div>
-        <div id="sidebar-wrapper" class="twitchy-background">
-            <ul id="accordion" class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="https://tic-ai.github.io/">
-                            <span class="glyphicon glyphicon-home padding-small"></span>
-                            AI's blog
-                    </a>
-                </li>
-                    <li>
-                        <a href="https://tic-ai.github.io/archives.html">
-                            <span class="glyphicon glyphicon-th-list padding-small"></span>
-                            Recent Articles
-                        </a>
-                    </li>
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
-                        <i class="fa fa-users padding-small"></i>
-                        Contact
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
-                    <li>
-                        <a href="#" title="Another social link">
-                            <i class="fa fa-another-social-link-square fa-lg padding-small"></i>
-                            Another social link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="You can add links in your config file">
-                            <i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg padding-small"></i>
-                            You can add links in your config file
-                        </a>
-                    </li>
-                </ul></li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Pages
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
-                </ul></li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Categories
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li >
-                        <a href="https://tic-ai.github.io/category/ml.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            ML
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="https://tic-ai.github.io/category/posts.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            posts
-                            <span class="badge pull-right categorybadge">1</span>
-                        </a>
-                    </li>
-                </ul></li>
-                
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- open/close sidebar -->
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
-            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
-        </a>
-       <!-- /open/close sidebar -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-<section id="content">
-    <article>
+<body id="index" class="home">
+
+
+    <div class="container">
+
         <div class="row">
-            <div class="col-lg-9">
-                <header class="page-header">
-                    <h1>
-                        <a href="https://tic-ai.github.io/first-post.html"
-                           rel="bookmark"
-                           title="Permalink to First Post">
-                            First Post
-                        </a>
-                        <small>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2020-03-17T15:00:00+07:00"> Tue 17 March 2020</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="https://tic-ai.github.io/category/posts.html">posts</a>
-            </span>
-            <span class="tags">
-                <i class="fa fa-tags padding-small"></i>
-                <a href="https://tic-ai.github.io/tag/python.html">python</a>            </span>
-        </small>
-    </div>
-</div><!-- /.post-info -->                        </small>
-                    </h1>
-                </header>
+
+          <header id="banner" class="body">
+                  <h1><a href="https://tic-ai.github.io/">AI's blog <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="https://tic-ai.github.io/">Home</a></li>
+
+
+              </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="entry-content">
-                    <style type="text/css">/*!
+
+<section id="content" class="body">
+
+   <div class="row">
+        <div class="eleven columns">
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="https://tic-ai.github.io/first-post.html" rel="bookmark"
+                   title="Permalink to First Post">First Post</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2020-03-17T15:00:00+07:00">
+                Tue 17 March 2020
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="https://tic-ai.github.io/author/trungquach.html"> TrungQuach</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1297,7 +1175,45 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="First-post!">First post!<a class="anchor-link" href="#First-post!">&#182;</a></h1><p>This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog.</p>
@@ -1499,64 +1415,93 @@ l6SGjLskNWTcJakh4y5JDf0vZB9FlJ1A1boAAAAASUVORK5CYII=
 }
 </script>
 
-                </div>
-                <footer class="text-right">
-                    <p>- TIC-AI</p>
-                </footer>
-    <section id="comments" class="comments ">
-        <hr/>
-        <h2>Comments</h2>
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "first-post.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://qntrung.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
             </div>
-        </div>
-    </article>
+
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+  <h4>Pages</h4>
+
+  <ul>
+
+  
+
+
+
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
+
 </section>
-<footer>
-    <hr>
-    <div class="row">
-        <div class="col-lg-9 text-center">
-            <p><small>
-                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
-                &middot;                    &copy; 2020 TIC-AI
-            </small></p>
-        </div>
-    </div>
-</footer>            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery Version 1.11.2 -->
-    <script src="https://tic-ai.github.io/theme/js/jquery-1.11.2.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://tic-ai.github.io/theme/js/bootstrap.min.js"></script>
-    <!-- twitchy Script -->
-    <script src="https://tic-ai.github.io/theme/js/pelican_twitchy.min.js"></script>
 
-<!-- disqus -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'qntrung'; // required: replace example with your forum shortname
-
-            var disqus_identifier = 'first-post';
-        var disqus_url = 'https://tic-ai.github.io/first-post.html';
-
-    var disqus_config = function () {
-        this.language = "en";
-    };
-        /* * * DON'T EDIT BELOW THIS LINE * * */
+    var disqus_shortname = 'qntrung';
     (function () {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
 </script>
-<!-- /disqus -->
+  <script src="https://tic-ai.github.io/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="https://tic-ai.github.io/theme/js/libs/gumby.min.js"></script>
+  <script src="https://tic-ai.github.io/theme/js/plugins.js"></script>
 </body>
 </html>
