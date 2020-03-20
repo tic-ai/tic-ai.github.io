@@ -2518,14 +2518,12 @@ h6:hover .anchor-link {
 &lt;h2 id="Introduction"&gt;Introduction&lt;a class="anchor-link" href="#Introduction"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. &lt;/li&gt;
 &lt;li&gt;It is seen as a subset of artificial intelligence. &lt;/li&gt;
-&lt;li&gt;Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task
-### Why Machine Learning?&lt;/li&gt;
+&lt;li&gt;Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Two major disadvantages of hardcode rules:&lt;/p&gt;
+&lt;h3 id="Why-Machine-Learning?"&gt;Why Machine Learning?&lt;a class="anchor-link" href="#Why-Machine-Learning?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Two major disadvantages of hardcode rules:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The logic required to make a decision is specific to a single domain and task. Changing the task even slightly might require a rewrite of the whole system.&lt;/li&gt;
-&lt;li&gt;Designing rules requires a deep understanding of how a decision should be made
-by a human expert.&lt;/li&gt;
+&lt;li&gt;Designing rules requires a deep understanding of how a decision should be made by a human expert.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
