@@ -2498,29 +2498,22 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 &lt;/style&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# from preamble import *&lt;/span&gt;
-&lt;span class="c1"&gt;# %matplotlib inline&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Introduction"&gt;Introduction&lt;a class="anchor-link" href="#Introduction"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;h1 id="Introduction"&gt;Introduction&lt;a class="anchor-link" href="#Introduction"&gt;&amp;#182;&lt;/a&gt;&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. &lt;/li&gt;
 &lt;li&gt;It is seen as a subset of artificial intelligence. &lt;/li&gt;
 &lt;li&gt;Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="Why-Machine-Learning?"&gt;Why Machine Learning?&lt;a class="anchor-link" href="#Why-Machine-Learning?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Two major disadvantages of hardcode rules:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Why-Machine-Learning?"&gt;Why Machine Learning?&lt;a class="anchor-link" href="#Why-Machine-Learning?"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Two major disadvantages of hardcode rules:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The logic required to make a decision is specific to a single domain and task. Changing the task even slightly might require a rewrite of the whole system.&lt;/li&gt;
 &lt;li&gt;Designing rules requires a deep understanding of how a decision should be made by a human expert.&lt;/li&gt;
@@ -2532,7 +2525,7 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Problems-Machine-Learning-Can-Solve"&gt;Problems Machine Learning Can Solve&lt;a class="anchor-link" href="#Problems-Machine-Learning-Can-Solve"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src="images/typesOfML.png" alt="title"&gt;&lt;/p&gt;
+&lt;h2 id="Problems-Machine-Learning-Can-Solve"&gt;Problems Machine Learning Can Solve&lt;a class="anchor-link" href="#Problems-Machine-Learning-Can-Solve"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="images/typesOfML.png" alt="title"&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2541,21 +2534,23 @@ h6:hover .anchor-link {
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;ul&gt;
-&lt;li&gt;Supervised learning&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Unsuperviesd learning&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Represent your data:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Data tables:&lt;/p&gt;
+&lt;li&gt;Supervised learning: Machine learning algorithms that learn from input/output pairs (output has labelled)&lt;/li&gt;
+&lt;li&gt;Unsuperviesd learning: only the input data is known, and no known output data is given to the algorithm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="Represent-your-data:"&gt;Represent your data:&lt;a class="anchor-link" href="#Represent-your-data:"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;In a data tables including&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Each data point that you want to reason about (each email, each customer, each transaction) is a row&lt;/li&gt;
-&lt;li&gt;Each property that describes that data point (say, the age of a customer or the amount or location of a transaction) is a column. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Each entity or row here is known as a sample (or data point) in machine learning, while the columns—the properties that describe these entities are called features.
-&lt;img src="images/iris_data_format.png" alt="title"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Each entity or row here is known as a sample (or data point)&lt;/li&gt;
+&lt;li&gt;Each property that describes that data point (say, the age of a customer or the amount or location of a transaction) is a column.&lt;/li&gt;
+&lt;li&gt;The columns—the properties that describe these entities are called features.
+&lt;img src="images/iris_data_format.png" alt="title"&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
@@ -2584,29 +2579,6 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Why-Python?"&gt;Why Python?&lt;a class="anchor-link" href="#Why-Python?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Python has become the general programming language for many data science applications.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It combines the power of general-purpose programming languages with the ease of use of domain-specific scripting languages like MATLAB or R.&lt;/li&gt;
-&lt;li&gt;Python has libraries for data loading, visualization, statistics, natural language processing, image processing, and more. &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="scikit-learn"&gt;scikit-learn&lt;a class="anchor-link" href="#scikit-learn"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;scikit-learn is an open source project, meaning that it is free to use and distribute, and anyone can easily obtain the source code to see what is going on behind the scenes.
-#### Installing scikit-learn&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="Essential-Libraries-and-Tools"&gt;Essential Libraries and Tools&lt;a class="anchor-link" href="#Essential-Libraries-and-Tools"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2614,20 +2586,37 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Jupyter-Notebook"&gt;Jupyter Notebook&lt;a class="anchor-link" href="#Jupyter-Notebook"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id="scikit-learn"&gt;scikit-learn&lt;a class="anchor-link" href="#scikit-learn"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;scikit-learn is an open source project, meaning that it is free to use and distribute, and anyone can easily obtain the source code to see what is going on behind the scenes.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="NumPy"&gt;NumPy&lt;a class="anchor-link" href="#NumPy"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="Jupyter-Notebook"&gt;Jupyter Notebook&lt;a class="anchor-link" href="#Jupyter-Notebook"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;The Jupyter Notebook is an interactive environment for running code in the browser.&lt;/li&gt;
+&lt;li&gt;A great tool for exploratory data analysis and is widely used by data scientists.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h4 id="NumPy"&gt;NumPy&lt;a class="anchor-link" href="#NumPy"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Contains functionality for multidimensional arrays, high-level mathematical functions such as linear algebra operations and the Fourier transform, and pseudorandom number generators.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -2664,13 +2653,16 @@ h6:hover .anchor-link {
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="SciPy"&gt;SciPy&lt;a class="anchor-link" href="#SciPy"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="SciPy"&gt;SciPy&lt;a class="anchor-link" href="#SciPy"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Provides,among other functionality, advanced linear algebra routines, mathematical function optimization, signal processing, special mathematical functions, and statistical distributions&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;sparse&lt;/span&gt;
@@ -2709,7 +2701,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Convert the NumPy array to a SciPy sparse matrix in CSR format&lt;/span&gt;
@@ -2788,7 +2780,10 @@ SciPy sparse CSR matrix:
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="matplotlib"&gt;matplotlib&lt;a class="anchor-link" href="#matplotlib"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="matplotlib"&gt;matplotlib&lt;a class="anchor-link" href="#matplotlib"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;visualizations &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2851,7 +2846,10 @@ SciPy sparse CSR matrix:
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="pandas"&gt;pandas&lt;a class="anchor-link" href="#pandas"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="pandas"&gt;pandas&lt;a class="anchor-link" href="#pandas"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Data wrangling and analysis&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3022,21 +3020,26 @@ SciPy sparse CSR matrix:
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="mglearn"&gt;mglearn&lt;a class="anchor-link" href="#mglearn"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id="Python"&gt;Python&lt;a class="anchor-link" href="#Python"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Python-2-versus-Python-3"&gt;Python 2 versus Python 3&lt;a class="anchor-link" href="#Python-2-versus-Python-3"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="Why-Python?"&gt;Why Python?&lt;a class="anchor-link" href="#Why-Python?"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Python has become the general programming language for many data science applications.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It combines the power of general-purpose programming languages with the ease of use of domain-specific scripting languages like MATLAB or R.&lt;/li&gt;
+&lt;li&gt;Python has libraries for data loading, visualization, statistics, natural language processing, image processing, and more. &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Versions-Used-in-this-Book"&gt;Versions Used in this Book&lt;a class="anchor-link" href="#Versions-Used-in-this-Book"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="Versions-Used"&gt;Versions Used&lt;a class="anchor-link" href="#Versions-Used"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3113,7 +3116,8 @@ scikit-learn version: 0.20.3
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="A-First-Application:-Classifying-Iris-Species"&gt;A First Application: Classifying Iris Species&lt;a class="anchor-link" href="#A-First-Application:-Classifying-Iris-Species"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src="images/iris_petal_sepal.png" alt="sepal_petal"&gt;&lt;/p&gt;
+&lt;h3 id="A-First-Application:-Classifying-Iris-Species"&gt;A First Application: Classifying Iris Species&lt;a class="anchor-link" href="#A-First-Application:-Classifying-Iris-Species"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src="images/iris_petal_sepal.jpeg" alt="sepal_petal"&gt;
+Iris data is a data sheet describing iris flowers,  some measurements associated with each iris: the length and width of the petals and the length and width of the sepals, all measured in centimeters&lt;/p&gt;
 &lt;h4 id="Meet-the-Data"&gt;Meet the Data&lt;a class="anchor-link" href="#Meet-the-Data"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3163,6 +3167,14 @@ scikit-learn version: 0.20.3
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The value of the key DESCR is a short description of the dataset.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
@@ -3329,6 +3341,16 @@ Iris plants dataset
 &lt;/div&gt;
 
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;The array contains measurements for 150 different flowers. Remember that the individual items are called samples (150) and their properties are called features (4)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[20]:&lt;/div&gt;
@@ -3466,7 +3488,15 @@ Iris plants dataset
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Measuring-Success:-Training-and-Testing-Data"&gt;Measuring Success: Training and Testing Data&lt;a class="anchor-link" href="#Measuring-Success:-Training-and-Testing-Data"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="Measuring-Success:-Training-and-Testing-Data"&gt;Measuring Success: Training and Testing Data&lt;a class="anchor-link" href="#Measuring-Success:-Training-and-Testing-Data"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;We cannot use the data we used to build the model to evaluate it. Because our model can always simply remember the whole training set =&amp;gt; predict the correct label for any point in the training set&lt;/li&gt;
+&lt;li&gt;We should split the labeled data we have collected (here, our 150 flower measurements) into two parts:&lt;ul&gt;
+&lt;li&gt;The training data: used to build our machine learning model, or training set.&lt;/li&gt;
+&lt;li&gt;The test data: used to assess how well the model works; or test set, or hold-out set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3476,14 +3506,23 @@ Iris plants dataset
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.model_selection&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;train_test_split&lt;/span&gt;
-&lt;span class="n"&gt;X_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X_test&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_test&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;train_test_split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-    &lt;span class="n"&gt;iris_dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;data&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;iris_dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;random_state&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;X_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X_test&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_train&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_test&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;train_test_split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;iris_dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;data&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;iris_dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;random_state&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;This function extracts 75% of the rows in the data as the training set, together with the corresponding labels for this data. The remaining 25% of the data, together with the remaining labels, is declared as the test set. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
@@ -3632,7 +3671,27 @@ y_test shape: (38,)
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;We can see that the three classes seem to be relatively well separated using the sepal and petal measurements. This means that a machine learning model will likely be able to learn to separate them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h4 id="Building-Your-First-Model:-k-Nearest-Neighbors"&gt;Building Your First Model: k-Nearest Neighbors&lt;a class="anchor-link" href="#Building-Your-First-Model:-k-Nearest-Neighbors"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;KNN finds the point in the training set that is closest to the new point. Then it assigns the label of this training point to the new data point.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3724,6 +3783,14 @@ y_test shape: (38,)
 &lt;/div&gt;
 
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;To make a prediction, we call the predict method of the knn object&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[36]:&lt;/div&gt;
@@ -3763,6 +3830,16 @@ Predicted target name: [&amp;#39;setosa&amp;#39;]
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h4 id="Evaluating-the-Model"&gt;Evaluating the Model&lt;a class="anchor-link" href="#Evaluating-the-Model"&gt;&amp;#182;&lt;/a&gt;&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;ul&gt;
+&lt;li&gt;We can make a prediction for each iris in the test data and compare it against its label (the known species). We can measure how well the model works by computing the accuracy, which is the fraction of flowers for which the right species was predicted:&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3906,18 +3983,19 @@ Predicted target name: [&amp;#39;setosa&amp;#39;]
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Keep in your mind in this chapter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Machine learning and its applications&lt;/li&gt;
+&lt;li&gt;Supervised and unsupervised learning.&lt;/li&gt;
+&lt;li&gt;Split our dataset into a training set, to build our model, and a test set, to evaluate.&lt;/li&gt;
+&lt;li&gt;Makes predictions for a new data point.&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
