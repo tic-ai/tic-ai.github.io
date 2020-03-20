@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://qntrung.github.io'
+SITEURL = 'https://tic-ai.github.io'
 #SITEURL='http://localhost:8000/output'
 RELATIVE_URLS = False
 
