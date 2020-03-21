@@ -7889,9 +7889,54 @@ argmax combined with classes_: [&#39;versicolor&#39; &#39;setosa&#39; &#39;virgi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Summary-and-Outlook">Summary and Outlook<a class="anchor-link" href="#Summary-and-Outlook">&#182;</a></h3>
+<h3 id="Summary-and-Outlook">Summary and Outlook<a class="anchor-link" href="#Summary-and-Outlook">&#182;</a></h3><p>Nearest neighbors</p>
+<ul>
+<li>For small datasets, good as a baseline, easy to explain.</li>
+</ul>
+<p>Linear models</p>
+<ul>
+<li>Go-to as a first algorithm to try, good for very large datasets, good for very highdimensional data.</li>
+</ul>
+<p>Naive Bayes</p>
+<ul>
+<li>Only for classification. Even faster than linear models, good for very large datasets and high-dimensional data. Often less accurate than linear models.</li>
+</ul>
+<p>Decision trees</p>
+<ul>
+<li>Very fast, don’t need scaling of the data, can be visualized and easily explained.</li>
+</ul>
+<p>Random forests</p>
+<ul>
+<li>Nearly always perform better than a single decision tree, very robust and powerful. Don’t need scaling of data. Not good for very high-dimensional sparse data.</li>
+</ul>
+<p>Gradient boosted decision trees</p>
+<ul>
+<li>Often slightly more accurate than random forests. Slower to train but faster to predict than random forests, and smaller in memory. Need more parameter tuning than random forests.</li>
+</ul>
+<p>Support vector machines</p>
+<ul>
+<li>Powerful for medium-sized datasets of features with similar meaning. Require scaling of data, sensitive to parameters.</li>
+</ul>
+<p>Neural networks</p>
+<ul>
+<li>Can build very complex models, particularly for large datasets. Sensitive to scaling of the data and to the choice of parameters. Large models need a long time to train.</li>
+</ul>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
  
 
