@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-        <title>Introduction</title>
+        <title>0-introduction</title>
         <meta charset="utf-8" />
         <link href="https://tic-ai.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="AI's blog Full Atom Feed" />
         <link href="https://tic-ai.github.io/feeds/%s.atom.xml" type="application/atom+xml" rel="alternate" title="AI's blog Categories Atom Feed" />
@@ -51,8 +51,8 @@
 
             <header>
               <h2 class="entry-title">
-                <a href="https://tic-ai.github.io/introduction.html" rel="bookmark"
-                   title="Permalink to Introduction">Introduction</a></h2>
+                <a href="https://tic-ai.github.io/0-introduction.html" rel="bookmark"
+                   title="Permalink to 0-introduction">0-introduction</a></h2>
            
             </header>
             <footer class="post-info">
@@ -1228,7 +1228,44 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Why-Machine-Learning?">Why Machine Learning?<a class="anchor-link" href="#Why-Machine-Learning?">&#182;</a></h2><p>Two major disadvantages of hardcode rules:</p>
+<h3 id="Content">Content<a class="anchor-link" href="#Content">&#182;</a></h3><ul>
+<li>Why Machine Learning? </li>
+<li>Problems Machine Learning Can Solve <ul>
+<li>Knowing Your Task and Knowing Your Data </li>
+</ul>
+</li>
+<li>Essential Libraries and Tools <ul>
+<li>scikit-learn </li>
+<li>Jupyter Notebook</li>
+<li>NumPy </li>
+<li>SciPy </li>
+<li>matplotlib </li>
+<li>pandas </li>
+</ul>
+</li>
+<li>Python<ul>
+<li>Why Python? </li>
+</ul>
+</li>
+<li>A First Application: Classifying Iris Species<ul>
+<li>Meet the Data </li>
+<li>Measuring Success: Training and Testing Data </li>
+<li>First Things First: Look at Your Data </li>
+<li>Building Your First Model: k-Nearest Neighbors </li>
+<li>Making Predictions </li>
+<li>Evaluating the Model 
+Summary and Outlook </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Why-Machine-Learning?">1. Why Machine Learning?<a class="anchor-link" href="#1.-Why-Machine-Learning?">&#182;</a></h2><p>Two major disadvantages of hardcode rules:</p>
 <ul>
 <li>The logic required to make a decision is specific to a single domain and task. Changing the task even slightly might require a rewrite of the whole system.</li>
 <li>Designing rules requires a deep understanding of how a decision should be made by a human expert.</li>
@@ -1240,7 +1277,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Problems-Machine-Learning-Can-Solve">Problems Machine Learning Can Solve<a class="anchor-link" href="#Problems-Machine-Learning-Can-Solve">&#182;</a></h2><p><img src="images/typesOfML.png" alt="title"></p>
+<h2 id="2.-Problems-Machine-Learning-Can-Solve">2. Problems Machine Learning Can Solve<a class="anchor-link" href="#2.-Problems-Machine-Learning-Can-Solve">&#182;</a></h2><p><img src="images/typesOfML.png" alt="title"></p>
 
 </div>
 </div>
@@ -1259,13 +1296,14 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Represent-your-data:">Represent your data:<a class="anchor-link" href="#Represent-your-data:">&#182;</a></h4><p>In a data tables including</p>
+<h3 id="2.1-Represent-your-data:">2.1 Represent your data:<a class="anchor-link" href="#2.1-Represent-your-data:">&#182;</a></h3><p>In a data tables including</p>
 <ul>
 <li>Each data point that you want to reason about (each email, each customer, each transaction) is a row</li>
 <li>Each entity or row here is known as a sample (or data point)</li>
 <li>Each property that describes that data point (say, the age of a customer or the amount or location of a transaction) is a column.</li>
-<li>The columns—the properties that describe these entities are called features.
-<img src="images/iris_data_format.png" alt="title"></li>
+<li><p>The columns—the properties that describe these entities are called features.</p>
+<p><img src="images/iris_data_format.png" alt="title"></p>
+</li>
 </ul>
 
 </div>
@@ -1274,7 +1312,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Knowing-Your-Task-and-Knowing-Your-Data">Knowing Your Task and Knowing Your Data<a class="anchor-link" href="#Knowing-Your-Task-and-Knowing-Your-Data">&#182;</a></h4><ul>
+<h3 id="2.2-Knowing-Your-Task-and-Knowing-Your-Data">2.2 Knowing Your Task and Knowing Your Data<a class="anchor-link" href="#2.2-Knowing-Your-Task-and-Knowing-Your-Data">&#182;</a></h3><ul>
 <li>Understanding the data </li>
 <li>How it relates to the task</li>
 </ul>
@@ -1294,7 +1332,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Essential-Libraries-and-Tools">Essential Libraries and Tools<a class="anchor-link" href="#Essential-Libraries-and-Tools">&#182;</a></h3>
+<h3 id="3.-Essential-Libraries-and-Tools">3. Essential Libraries and Tools<a class="anchor-link" href="#3.-Essential-Libraries-and-Tools">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1735,7 +1773,7 @@ SciPy sparse CSR matrix:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Python">Python<a class="anchor-link" href="#Python">&#182;</a></h3>
+<h3 id="4.-Python">4. Python<a class="anchor-link" href="#4.-Python">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -1831,9 +1869,16 @@ scikit-learn version: 0.20.3
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="A-First-Application:-Classifying-Iris-Species">A First Application: Classifying Iris Species<a class="anchor-link" href="#A-First-Application:-Classifying-Iris-Species">&#182;</a></h3><p><img src="images/iris_petal_sepal.jpeg" alt="sepal_petal"></p>
+<h3 id="5.-A-First-Application:-Classifying-Iris-Species">5. A First Application: Classifying Iris Species<a class="anchor-link" href="#5.-A-First-Application:-Classifying-Iris-Species">&#182;</a></h3><p><img src="images/iris_petal_sepal.jpeg" alt="sepal_petal"></p>
 <p>Iris data is a data sheet describing iris flowers,  some measurements associated with each iris: the length and width of the petals and the length and width of the sepals, all measured in centimeters</p>
-<h4 id="Meet-the-Data">Meet the Data<a class="anchor-link" href="#Meet-the-Data">&#182;</a></h4>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="5.1-Meet-the-Data">5.1 Meet the Data<a class="anchor-link" href="#5.1-Meet-the-Data">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -2203,7 +2248,7 @@ Iris plants dataset
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Measuring-Success:-Training-and-Testing-Data">Measuring Success: Training and Testing Data<a class="anchor-link" href="#Measuring-Success:-Training-and-Testing-Data">&#182;</a></h4><ul>
+<h4 id="5.2-Measuring-Success:-Training-and-Testing-Data">5.2 Measuring Success: Training and Testing Data<a class="anchor-link" href="#5.2-Measuring-Success:-Training-and-Testing-Data">&#182;</a></h4><ul>
 <li>We cannot use the data we used to build the model to evaluate it. Because our model can always simply remember the whole training set =&gt; predict the correct label for any point in the training set</li>
 <li>We should split the labeled data we have collected (here, our 150 flower measurements) into two parts:<ul>
 <li>The training data: used to build our machine learning model, or training set.</li>
@@ -2308,7 +2353,7 @@ y_test shape: (38,)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="First-Things-First:-Look-at-Your-Data">First Things First: Look at Your Data<a class="anchor-link" href="#First-Things-First:-Look-at-Your-Data">&#182;</a></h4>
+<h4 id="5.3-First-Things-First:-Look-at-Your-Data">5.3 First Things First: Look at Your Data<a class="anchor-link" href="#5.3-First-Things-First:-Look-at-Your-Data">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -2396,7 +2441,7 @@ y_test shape: (38,)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Building-Your-First-Model:-k-Nearest-Neighbors">Building Your First Model: k-Nearest Neighbors<a class="anchor-link" href="#Building-Your-First-Model:-k-Nearest-Neighbors">&#182;</a></h4>
+<h4 id="5.4-Building-Your-First-Model:-k-Nearest-Neighbors">5.4 Building Your First Model: k-Nearest Neighbors<a class="anchor-link" href="#5.4-Building-Your-First-Model:-k-Nearest-Neighbors">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -2462,7 +2507,7 @@ y_test shape: (38,)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Making-Predictions">Making Predictions<a class="anchor-link" href="#Making-Predictions">&#182;</a></h4>
+<h4 id="5.5-Making-Predictions">5.5 Making Predictions<a class="anchor-link" href="#5.5-Making-Predictions">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -2544,7 +2589,7 @@ Predicted target name: [&#39;setosa&#39;]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Evaluating-the-Model">Evaluating the Model<a class="anchor-link" href="#Evaluating-the-Model">&#182;</a></h4>
+<h4 id="5.6-Evaluating-the-Model">5.6 Evaluating the Model<a class="anchor-link" href="#5.6-Evaluating-the-Model">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -2657,7 +2702,7 @@ Predicted target name: [&#39;setosa&#39;]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Summary-and-Outlook">Summary and Outlook<a class="anchor-link" href="#Summary-and-Outlook">&#182;</a></h3>
+<h3 id="6.-Summary-and-Outlook">6. Summary and Outlook<a class="anchor-link" href="#6.-Summary-and-Outlook">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2762,7 +2807,7 @@ Predicted target name: [&#39;setosa&#39;]
               <h3>Comments</h3>
               <div id="disqus_thread"></div>
               <script type="text/javascript">
-                var disqus_identifier = "introduction.html";
+                var disqus_identifier = "0-introduction.html";
                 (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = 'https://qntrung.disqus.com/embed.js';
