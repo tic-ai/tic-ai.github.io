@@ -1493,6 +1493,7 @@ h6:hover .anchor-link {
 <li><p>The idea behind dummy variables is to replace a categorical variable with one or more new features that can have the values 0 and 1.</p>
 </li>
 </ul>
+<p>After reading a dataset like this, it is often good to first check if a column actually contains meaningful categorical data.</p>
 
 </div>
 </div>
@@ -1529,6 +1530,14 @@ Name: gender, dtype: int64
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that there are exactly two values for gender in this dataset, Male and Female, meaning the data is already in a good format to be represented using onehot-encoding. In a real application, you should look at all columns and check their values.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
